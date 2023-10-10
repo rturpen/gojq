@@ -20,7 +20,7 @@ type encoder struct {
 	buf    [64]byte
 }
 
-func newEncoder(tab bool, indent int) *encoder {
+func NewEncoder(tab bool, indent int) *encoder {
 	// reuse the buffer in multiple calls of marshal
 	return &encoder{w: new(bytes.Buffer), tab: tab, indent: indent}
 }

@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/itchyny/gojq"
+	"github.com/rturpen/gojq"
 )
 
 func TestCompare(t *testing.T) {
